@@ -7,7 +7,7 @@ pipeline {
       }
       steps {
         sh '''
-if [ -z "$CHANGE_ID" ]
+if [ -z $CHANGE_ID ]
 then
       $GIT_REF="refs/pull/PR-$CHANGE_ID/head"
 else
